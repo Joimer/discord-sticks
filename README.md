@@ -1,6 +1,6 @@
 This is a Discord bot to play the chat game sticks. It's about removing sticks from a pile until there's only one, then the player that picks last losses.
 
-This bot itself is pretty straightforward, just start it with `npm start` or `node app.js`.
+This bot itself is pretty straightforward, just start it with `npm start` or `node app.js`. To make it work properly, copy the file `config-example.json` into a file called `config.json` and fill in the Discord token for your bot application.
 
 The game is played with the pre-configured prefix of `s!`, and the commands it takes are `begin`, `join`, and `take`. To create a game, currently not requiring permissions, just type `s!begin`. Then, to join a game (up to 2 players by design), type `s!join`. There can be one game per channel. The command to take sticks is either `s!take [row]:[column]` or `s!take [row]:[column-start]-[column-end]`, where all numbers should be positive integers that you can use to denote a position in the playing field.
 

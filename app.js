@@ -1,7 +1,12 @@
 // Start up Discord client.
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.config = require('./config.json');
+try {
+    client.config = require('./config.json');
+} catch (err) {
+    console.error("Please, copy config-example.json into config.json and fill the information.");
+    process.exit(-1);
+}
 const Game = require('./game');
 const Player = require('./player');
 const games = {};
