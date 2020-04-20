@@ -15,8 +15,8 @@
     "email": "juanmadss@gmail.com"
   },
   "contributors": [],
-  "private": true,
-  "license": "BSD-3-Clause",
+  "private": false,
+  "license": "cc-by-sa",
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.2.0"
