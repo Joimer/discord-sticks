@@ -59,7 +59,7 @@ class Game {
         let playerId = player.getId();
         if (this.players[0] && this.players[0].getId() === playerId
         || this.players[1] && this.players[1].getId() === playerId) {
-            throw new Error("This player is already in the game!");
+            //throw new Error("This player is already in the game!");
         }
         // Hehe this is smart isn't it minna
         this.players[this.currentPlayers] = player;
@@ -95,7 +95,7 @@ class Game {
             }
             strBoard += "\n";
         }
-        strBoard += "_|1|2|3|4|5\n"; // Configurable?
+        strBoard += "  |1|2|3|4|5\n"; // Configurable?
         return strBoard + "```";
     }
 
